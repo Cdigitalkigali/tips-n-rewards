@@ -41,6 +41,8 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+![image](https://user-images.githubusercontent.com/49512755/229177847-f7b45ac1-f2f6-4211-af89-80def88b46e3.png)
+
 Tips n' Rewards is app by Comet Digital Ltd to encourage tipping businesses by collaborating with other organizations to give users the opportunity to earn rewards for their tipping.
 
 ### Built With
