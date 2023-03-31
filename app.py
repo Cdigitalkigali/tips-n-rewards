@@ -21,3 +21,16 @@ Session(app)
 @app.route("/")
 def index():
     return "Hello"
+
+# User-side -----------------------------------------------------------------------------------------
+@app.route("/user")
+def user_index():
+    return render_template("user/index.html")
+
+@app.route("/user/signup")
+def user_signup():
+    return render_template("user/signup.html")
+
+@app.route("/user/login")
+def user_login():
+    return render_template("user/login.html")

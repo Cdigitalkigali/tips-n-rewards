@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block main %}
+<main>
+<section class="loader" id="loading-screen" style="display: none;">
+    <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    <p>...just a moment...</p>
+</section>
+<section class="state landing" id="Landing">
+    <nav class="nav-one">
+        <img src="../../static/icons/at-solid.svg" class="icons" alt="contact">
+        <p class="app-name">Tips N' Rewards</p>
+        <img src="../../static/icons/bars-solid.svg" class="icons" alt="options">
+    </nav>
+    <img src="../../static/images/Capture.PNG" alt="waiter" class="landing-image">
+    <div class="fixed-bottom">
+        <p>Tip your favorite businesses and earn rewards!</p>
+        <button type="button" class="btn btn-filled btn-info"><a href="user/signup">Sign Up</a></button>
+        <button type="button" class="btn btn-outline-info"><a href="user/login">Login</a></button>
+    </div>
+</section>
+</main>
+{% endblock %}
