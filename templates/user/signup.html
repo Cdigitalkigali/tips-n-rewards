@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block main %}
+<main>
+    <section class="loader" id="loading-screen" style="display: none;">
+        <div class="lds-ellipsis">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <p>...just a moment...</p>
+    </section>
+    <section class="state landing" id="Landing">
+        <nav class="nav-one">
+            <img src="../../static/icons/at-solid.svg" class="icons" alt="contact">
+            <p class="app-name">Tips N' Rewards</p>
+            <img src="../../static/icons/bars-solid.svg" class="icons" alt="options">
+        </nav>
+        <h1>Sign Up</h1>
+        <p>Please fill in the following fields to sign up.</p>
+        <br>
+        <div class="mb-3">
+            <input type="tel" class="form-control" id="exampleInputTel1" placeholder="Phone Number">
+        </div>
+        <div class="mb-3">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Create password">
+        </div>
+        <button type="submit" class="btn btn-filled btn-primary">Submit</button>
+    </section>
+</main>
+{% endblock %}

@@ -1,17 +1,3 @@
-<!--
-    This file contains all the html which isn't directly displayed on the page. 
-    To edit visible content, see other html files:
-
-    > templates
-        -- index.html (contais the landing, signup and login pages)
-        -- verify.html (contains the phone number verification page )
-        > user (everything that the user (the person tipping) sees)
-            -- index.html (The dashboard, rewards, history, tip and more page)
-            TBD
-        > vendor (everything that the tip receiver sees)
-            -- index.html (vendor dashboard)
--->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,21 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- tailwindcss -->
-    <script src="https://cdn.tailwindcss.com"></script>
     <!-- bootstrap css-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-    <!-- google icons-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- fontawesome-->
+    <script src="https://kit.fontawesome.com/71814132a8.js" crossorigin="anonymous"></script>
     <!-- stylesheets -->
     <link rel="stylesheet" href="../static/css/utils.css">
     <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
-    
+    {% block main %}{% endblock %}
     <!-- bootstrap scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
     <!-- local scripts -->
-    <script src="../static/js/script.js"></script>
+    <script src="../static/js/scripts.js"></script>
+    <script src="../static/js/state-handler.js"></script>
 </body>
 </html>
